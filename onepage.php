@@ -7,9 +7,9 @@ $offer = json_decode($dataOffer, true);
 
 $dir = __DIR__;
 
-$newPrice = 2290;
-$oldPrice = 6580;
-$currencyDisplay = 'руб';
+$newPrice = 89;
+$oldPrice = 215;
+$currencyDisplay = 'Br';
 
 require('lib/app.php');
 

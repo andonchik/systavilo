@@ -1,16 +1,16 @@
 <?php
 
 $apiKey = '1KbExycmsFUp1x1ISwXDPuXpitxpOde3wAnD';          // Ключ доступа к API
-$offer_id = 4540;         // для каждого оффера свой айди, надо уточнять его в админке или у суппортов
+$offer_id = 4569;         // для каждого оффера свой айди, надо уточнять его в админке или у суппортов
 $stream_hid = '';     // id потока
 
 $default_main_site = 'http://api.cpa.tl';
 $apiSendLeadUrl = 'http://api.cpa.tl/api/lead/send_archive';
 $apiGetLeadUrl = 'http://api.cpa.tl/api/lead/feed';
 
-$dataOffers = '{"18633":{"price2":"6580","price":"2290","id":18633,"country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"name":"\u0427\u0430\u0441\u044b Solar Watch"}}';
-$dataOffer = '{"price2":"6580","price":"2290","id":18633,"country":{"code":"RU","name":"\u0420\u043e\u0441\u0441\u0438\u044f"},"currency":{"code":"RUB","name":"\u0440\u0443\u0431"},"name":"\u0427\u0430\u0441\u044b Solar Watch"}';
-$productName = 'Часы Solar Watch';
+$dataOffers = '{"18747":{"price2":"215","price":"89","id":18747,"country":{"code":"BY","name":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c"},"currency":{"code":"BYR","name":"Br"},"name":"\u0424\u0438\u0442\u043d\u0435\u0441-\u0431\u0440\u0430\u0441\u043b\u0435\u0442 Xiaomi Mi Band 5"}}';
+$dataOffer = '{"price2":"215","price":"89","id":18747,"country":{"code":"BY","name":"\u0411\u0435\u043b\u0430\u0440\u0443\u0441\u044c"},"currency":{"code":"BYR","name":"Br"},"name":"\u0424\u0438\u0442\u043d\u0435\u0441-\u0431\u0440\u0430\u0441\u043b\u0435\u0442 Xiaomi Mi Band 5"}';
+$productName = 'Фитнес-браслет Xiaomi Mi Band 5';
 $invoice = 'index.php';
 $push_link = '';
 $language = 'ru';
