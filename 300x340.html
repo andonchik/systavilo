@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>300x340</title>
+		<meta charset="UTF-8">
+		<meta name="ad.size" content="width=300,height=340">
+
+		<link href="css/css_2.css" rel="stylesheet">
+		<link href="css/css_3.css" rel="stylesheet">
+
+		<style type="text/css">
+
+			#predplatne_baner_main {
+				position: absolute;
+				overflow: hidden;           
+				background: white;
+			}
+
+			#predplatne_bg {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}   
+
+
+			#frame-01 {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				z-index: 2;
+				opacity: 1;
+			}
+			#frame-02 {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: -1px;
+				left: -6px;
+				z-index: 0;
+				opacity: 1;
+				transform: scale(0.9);
+			}
+			#frame-03 {
+				position: absolute;
+				height: 100%;
+				width: 100%;
+				top: 12px;
+				left: 28px;
+				z-index: 5;
+				opacity: 1;
+			}
+			#frame-03 h2 {
+				font-weight: bold;
+				font-size: 30px;
+				line-height: 1;
+				font-family: 'Lora';
+				margin-bottom: 12px;
+			}
+			#frame-03 p {
+				font-weight: 400;
+				font-size: 17px;
+				line-height: 1;
+				font-family: 'Open sans';
+			}
+			#frame-03 button {
+				font-size: 16px;
+				line-height: 1;
+				font-weight: bold;
+				font-family: 'Open sans';
+				letter-spacing: 4px;
+				text-transform: uppercase;
+				background-color: #fab201;
+				border: none;
+				padding: 20px 30px;
+				color: white;
+				position: relative;
+				width: 200px;
+				text-align: center;
+				left: 20px;
+				top: 25px;
+				-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+				-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+				box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+				-webkit-transition: all 0.5s ease; /* Safari */
+				transition: all 0.5s ease;
+				cursor: pointer;
+			}
+			#frame-03 button:hover {
+				letter-spacing: 2px;
+			}
+			#frame-03 button::after {
+				content: "";
+				position: absolute;
+				top: 0px;
+				right: 0%;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 28px 10px 28px 0;
+				border-color:  #fab201 transparent #fab201 transparent;
+				transform: translateX(100%);
+				-webkit-transform: translateX(100%);
+			}
+			#frame-03 button::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 0%;
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 28px 0px 28px 10px;
+				border-color: #fab201 transparent #fab201 transparent;
+				transform: translateX(-100%);
+				-webkit-transform: translateX(-100%);
+			}
+			a {
+				color: black;
+			}
+
+			.border {
+				border: 6px solid #fab201;
+			}
+
+
+
+			.scale {
+				animation-name: scale ;
+				animation-duration: 1s;
+				animation-delay: 2s;
+				animation-fill-mode: forwards;
+			}
+
+			@keyframes scale { 
+
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.05);
+				}			
+
+				100% {
+					transform: scale(1);
+				}
+			}
+
+
+
+		</style>
+
+
+    </head>
+    <body style="margin:0;padding:0;border:0;outline:0;">
+		<a href="#" id="creativelink" target="_blank">
+			<div id="predplatne_baner_main" style="width:300px; height:340px;">  
+				<div id="frame-01" class="">
+					<img src="images/banner-01.png" alt="">
+				</div>
+
+				<div id="frame-02" class=" border">
+				</div>
+				<div id="frame-03" class=" ">
+					<h2 class="scale">
+						Chcete byť <br> denne <br> v obraze?
+					</h2>
+					<p>
+						Predplaťte si denník Pravda
+					</p>
+					<button>
+						Predplatné
+					</button>
+				</div>
+
+
+			</div>
+		</a>
+		<script type="text/javascript">
+			var parsed =
+					(document.location.href.split('#')[1] || '').split('&');
+			var params = parsed.reduce(function (params, param) {
+				var param = param.split('=');
+				params[param[0]] =
+						decodeURIComponent(param.slice(1).join('='));
+				return params;
+			}, {});
+			// change link href
+			document.getElementById('creativelink').href =
+					params.clickTag;
+
+			setInterval(function () {
+				var container = document.getElementById('predplatne_baner_main');
+				var tmp = container.innerHTML;
+				container.innerHTML = tmp;
+			}, 5000
+					);
+		</script>
+
+
+    </body>
+</html>
