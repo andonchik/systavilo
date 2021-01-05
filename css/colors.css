@@ -1,0 +1,135 @@
+header {
+  color: #fff;
+}
+header h1 b {
+  color: #fff;
+}
+red{
+    color:red;
+}
+header .wrapper {
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#preview {
+  color: #fff;
+}
+#preview h2 b {
+  color: inherit;
+}
+#preview .wrapper {
+  background-image: url('../images/8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#upsell {
+  color: #fff;
+}
+#upsell  h2 b {
+  color: inherit;
+}
+#upsell .wrapper {
+  background-image: url('../images/upsell1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#gallery {
+  color: inherit;
+}
+#gallery h2 b {
+  color: #fff;
+}
+#gallery .wrapper {
+  background-image: url('../images/w1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#test {
+  color: inherit;
+}
+#test h2 b {
+  color: inherit;
+}
+#test .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#delivery {
+  color: inherit;
+}
+#delivery h2 b {
+  color: inherit;
+}
+#delivery .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#guaranry {
+  color: inherit;
+}
+#guaranry h2 b {
+  color: inherit;
+}
+#guaranry .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about {
+  color: inherit;
+}
+#about h2 b {
+  color: inherit;
+}
+#about .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#buy {
+  color: inherit;
+}
+#buy h2 b {
+  color: inherit;
+}
+#buy .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+footer {
+  background-image: url('../images/3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+footer h2 b {
+  color: inherit;
+}
+footer .wrapper {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
